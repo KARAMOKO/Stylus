@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
@@ -36,7 +38,7 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag 'logo_2.svg' %>
           <% end %>
         </div>
 
@@ -45,8 +47,8 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "team.html" do %>
+                <i class="fas fa-users"></i>Team
               <% end %>
             </li>
             <li>
@@ -68,5 +70,23 @@
     </nav>
 
     <%= yield %>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8 text-right">
+            <p>Stylus is a fictive product by Graphikara</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
