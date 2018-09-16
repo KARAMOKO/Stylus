@@ -12,3 +12,11 @@
 @import "components/*";
 @import "pages/*";
 @import "vendor/*";
+
+body {
+	font-family: $base-font, sans-serif;
+  }
+
+h1{
+	font-family: $header-font, sans-serif;
+ }
